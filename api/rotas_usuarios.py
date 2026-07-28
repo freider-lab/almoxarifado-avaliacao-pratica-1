@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from database import get_db
 from models.usuario import Usuario
 from schemas.usuario_schema import UsuarioCreate, UsuarioResponse
-from core.security import verificar_admin
+from core.security import verificar_admin, verificar_acesso_basico
 
 router = APIRouter(prefix="/usuarios", tags=["Usuários"])
 
